@@ -1,0 +1,37 @@
+{
+  "_说明": "复制成 providers.json 再改. key 不写在这里, 走环境变量 GEN_API_KEY. 字段名和返回结构以你的服务商文档为准.",
+  "base": "https://api.example.com/v1",
+  "endpoints": {
+    "img": "/images/generations",
+    "video": "/video/generations",
+    "tts": "/audio/generations",
+    "balance": "/balance"
+  },
+  "response": {
+    "task_id": "data.taskId",
+    "state": "data.state",
+    "urls": ["data.resultUrls", "data.result_urls", "data.url"],
+    "done": ["completed"],
+    "failed": ["failed", "error"],
+    "balance": "data.balance"
+  },
+  "defaults": {
+    "img": "your-image-model",
+    "video": "your-video-model",
+    "tts": "your-tts-model"
+  },
+  "models": {
+    "your-image-model": {
+      "price": {"per_image": 0.0},
+      "extra": {}
+    },
+    "your-video-model": {
+      "price": {"per_second": {"480p": 0.0, "768p": 0.0}},
+      "extra": {}
+    },
+    "your-tts-model": {
+      "price": {"per_kbyte": 0.0, "min_bytes": 100},
+      "extra": {}
+    }
+  }
+}

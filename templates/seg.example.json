@@ -1,0 +1,16 @@
+{
+  "video": "../gen/video/seg01_60fps.mp4",
+  "out": "../out/seg01_final.mp4",
+  "fps": 60,
+  "subs": [
+    {"text": "第一句字幕", "start": 0.4, "end": 3.2},
+    {"text": "第二句字幕", "start": 3.4, "end": 6.0}
+  ],
+  "vo": [
+    {"file": "../gen/tts/seg01_vo01.wav", "start": 0.5, "gain_db": 0}
+  ],
+  "duck_db": -6,
+  "lufs": -16,
+  "limit": 0.8,
+  "style": {"size": 0.045, "y": 0.78, "color": [255, 255, 255], "shadow": [0, 0, 0], "track": 0.04}
+}

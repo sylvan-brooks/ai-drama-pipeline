@@ -1,0 +1,11 @@
+# 自己的接口配置、账本和产物
+pipeline/providers.json
+ledger.jsonl
+**/ledger.jsonl
+work/
+gen/
+out/
+_tmp_*/
+finish_*/
+__pycache__/
+*.pyc
